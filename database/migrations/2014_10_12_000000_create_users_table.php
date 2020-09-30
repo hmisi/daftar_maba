@@ -20,6 +20,9 @@ class CreateUsersTable extends Migration
             $table->string('cls');
             $table->string('email')->unique();
             $table->string('wa');
+            $table->text('q1');
+            $table->text('q2');
+            $table->text('q3');
             $table->timestamps();
         });
     }
