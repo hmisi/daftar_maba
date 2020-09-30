@@ -11,7 +11,7 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <link rel="shortcut icon" href="https://hmisippg.org//assets/img/HMISI.png" type="image/x-icon">
-    <title>Form Daftar Anggota HMISI 2020</title>
+    <title>Form Daftar Anggota HMISI <?= date('Y');?></title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
@@ -133,7 +133,7 @@
             <div class="col-md-9 register-right">
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <h3 class="register-heading">Daftar sebagai Anggota Baru!</h3>
+                        <h3 class="register-heading">Daftar sebagai Anggota Baru <br>Angkatan <?= date('Y');?>!</h3>
                         <form class="row register-form" action="{{'/add'}}" method="POST">
                             <div class="col-md-12">
                                 @if (session('status'))
