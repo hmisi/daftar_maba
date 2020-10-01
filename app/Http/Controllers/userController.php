@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Maba;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -45,7 +46,7 @@ class userController extends Controller
             'q2' => 'required',
             'q3' => 'required',
         ]);
-        User::create($request->all());
+        Maba::create($request->all());
         return redirect('/')->with('status', 'Hi Terimakasih Telah mendaftar!! Tunggu Informasi lanjut dari Humas Kami ya...');
     }
 
